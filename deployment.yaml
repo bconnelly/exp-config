@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: basic-api-deployment
+spec:
+  selector:
+    matchLabels:
+      app: basic-api-app
+  replicas: 2
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: basic-api-app
+    spec:
+      containers:
+      — name: basic-api-app
+        image: bryan949/basic-api:1.0
+        ports:
+        — containerPort: 80
