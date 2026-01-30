@@ -15,7 +15,7 @@ spec:
         app: basic-api-app
     spec:
       containers:
-      — name: basic-api-app
+      - name: basic-api-app
         image: bryan949/basic-api:1.0
         ports:
-        — containerPort: 80
+        - containerPort: 80
