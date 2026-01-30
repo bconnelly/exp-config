@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: basic-api-service
-  namespace: argocd
+  namespace: basicapi
 spec:
   selector:
     app: basic-api-app
